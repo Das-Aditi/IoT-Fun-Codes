@@ -1,5 +1,4 @@
 # ESP32 Lab — Beginner to Real-World
-![ESP32 types image](https://makeradvisor.com/esp32-development-boards-review-comparison/)
 ## What is the ESP32?
 
 A low-cost, low-power microcontroller with **built-in Wi-Fi + Bluetooth**. Think of it as a tiny computer that can sense, compute, and talk wirelessly — all on a chip the size of a postage stamp.

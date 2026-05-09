@@ -1,5 +1,4 @@
 # ESP32 Lab — Beginner to Real-World
-
 ## What is the ESP32?
 
 A low-cost, low-power microcontroller with **built-in Wi-Fi + Bluetooth**. Think of it as a tiny computer that can sense, compute, and talk wirelessly — all on a chip the size of a postage stamp.
@@ -11,6 +10,7 @@ A low-cost, low-power microcontroller with **built-in Wi-Fi + Bluetooth**. Think
 | NodeMCU ESP32-S | Narrower, breadboard-friendly, same chip |
 
 ---
+![ESP32 Pin Layout](https://esp32io.com/images/tutorial/ESP-WROOM-32-Dev-Module-pinout.jpg)
 
 ## Pin Types — Quick Reference
 
@@ -71,6 +71,33 @@ Use case: A bridge device, or a local web dashboard while staying cloud-connecte
 05_ap_sta_dual_mode   → Both simultaneously
 ... (coming next: web server, sensors, MQTT, BLE)
 ```
+
+---
+
+## Language & Toolchain Options
+
+### What language is used here?
+All sketches in this lab are written in **C++**, specifically the Arduino-flavoured subset of it. The `.ino` files are C++ under the hood — `setup()` and `loop()` are just Arduino's entry point conventions. The Arduino framework wraps Espressif's lower-level ESP-IDF so you don't have to deal with hardware registers directly.
+
+---
+
+### What else can you use?
+
+| Language / Framework | Tool | Good for | Tradeoff |
+|---|---|---|---|
+| **C++ (Arduino)** | Arduino IDE, PlatformIO | Beginners, huge library ecosystem | Abstracted, less control |
+| **C / C++ (ESP-IDF)** | VS Code + Espressif IDF plugin | Full hardware control, production firmware | Steeper learning curve, verbose |
+| **MicroPython** | Thonny IDE, `mpremote` | Rapid prototyping, Python familiarity | Slower, less RAM, smaller library base |
+| **CircuitPython** | Mu Editor | Educational, drag-and-drop file system | Limited ESP32 support vs MicroPython |
+| **Lua** | NodeMCU firmware | Scripting, event-driven style | Mostly legacy now, less maintained |
+| **JavaScript** | Moddable SDK, Espruino | JS familiarity | Niche, limited community |
+| **Rust** | `esp-hal`, `esp-idf-hal` crates | Memory safety, modern tooling | Experimental, complex setup |
+
+**Recommendation by use case:**
+- Just starting out → **Arduino (C++)** — this lab
+- Want more Python → **MicroPython** — great second step, most concepts transfer
+- Building a real product → **ESP-IDF (C/C++)** — what Espressif themselves use
+- Interested in modern systems programming → **Rust** — rapidly maturing for ESP32
 
 ---
 
