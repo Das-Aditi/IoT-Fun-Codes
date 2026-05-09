@@ -163,7 +163,7 @@ No Home Assistant needed to test. Change `MQTT_BROKER` to `broker.hivemq.com` (f
 
 ---
 
-## Coming in Batch 3
+## Coming Up Next
 
 ```
 11 — WiFiManager      → captive config portal, no hardcoded credentials
