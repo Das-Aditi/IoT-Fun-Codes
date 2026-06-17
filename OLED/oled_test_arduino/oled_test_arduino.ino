@@ -1,5 +1,5 @@
 /*
- * OLED Display Test Suite - Arduino (SSD1306 128x64)
+ * OLED Display Test - Arduino (SSD1306 128x64)
  * 
  * Hardware: SSD1306 OLED via I2C
  * Libraries Required:
