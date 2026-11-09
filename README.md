@@ -237,3 +237,53 @@ Add [`stm32-ssd1306`](https://github.com/afiskon/stm32-ssd1306) driver to your p
 ---
 
 *Each `.ino` has a comment block at the top with wiring, required libraries, and what to watch on Serial Monitor.*
+
+
+## New Sensors: MAX30102 and MPU6050
+
+Both are I2C sensors, so they share the same two wires on the ESP32 (GPIO 21 = SDA, GPIO 22 = SCL) and can run together because their addresses differ.
+
+### MAX30102: heart rate and blood oxygen (SpO2)
+
+| Item | Detail |
+|---|---|
+| What it does | Shines red (660 nm) and infrared (880 nm) light into a fingertip and measures the light that returns. Each heartbeat changes the blood volume, so the reading pulses. Timing the pulses gives BPM |
+| I2C address | `0x57` |
+| Power | 3.3 V |
+| Resolution | Up to 18-bit, 32-sample FIFO buffer |
+| Pins used | VIN, GND, SDA, SCL. INT, IRD and RD stay unconnected |
+| Folder | `MAX30102_Pulse_Oximeter_HR_monitor/` |
+| Tips | Rest the finger lightly and keep still. Motion and poor contact give false readings. Not a medical device |
+
+### MPU6050: motion, tilt and shake
+
+| Item | Detail |
+|---|---|
+| What it does | 3-axis accelerometer (tilt, shake) + 3-axis gyroscope (rotation speed) on one chip |
+| I2C address | `0x68` (`0x69` if AD0 is pulled high) |
+| Power | 3.3 V (the GY-521 board has a regulator) |
+| Resolution | 16-bit. Accelerometer +/-2 to 16 g, gyroscope +/-250 to 2000 deg/s |
+| Pins used | VCC, GND, SDA, SCL. AD0, INT, XDA and XCL stay unconnected |
+| Folder | `MPU6050_Accelerometer_Gyroscope/` |
+| Tips | At rest the three axes add up to about 9.8 m/s2. Fix the board firmly. Moving or braking adds extra acceleration to the tilt reading |
+
+### Wiring (both sensors on one ESP32)
+
+| Sensor pin | ESP32 pin |
+|---|---|
+| VIN (MAX30102) / VCC (MPU6050) | 3V3 |
+| GND | GND |
+| SDA | GPIO 21 |
+| SCL | GPIO 22 |
+
+If a sensor does not respond, run an I2C scan: you should see `0x57` and `0x68`.
+
+---
+
+## Setup
+
+1. Install [Arduino IDE](https://www.arduino.cc/en/software) or VS Code + PlatformIO
+2. Add ESP32 board package — `File → Preferences → Additional Boards Manager URLs`:
+   `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
+3. `Tools → Board → ESP32 Arduino → ESP32 Dev Module` (or NodeMCU-32S)
+4. Select the correct COM port, upload speed `115200`
