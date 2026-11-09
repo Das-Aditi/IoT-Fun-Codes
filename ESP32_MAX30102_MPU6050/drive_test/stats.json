@@ -1,0 +1,137 @@
+[
+    {
+        "time": "06:01:47 PM",
+        "name": "WW (Mode 3)",
+        "avgBpm": "75 BPM",
+        "rt": "2.40 s",
+        "score": "6\/6",
+        "tremor": "0.35 m\/s\u00b2",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "05:59:27 PM",
+        "name": "ADI (Mode 3)",
+        "avgBpm": "76 BPM",
+        "rt": "2.13 s",
+        "score": "6\/6",
+        "tremor": "0.82 m\/s\u00b2",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "05:58:45 PM",
+        "name": "ADI (Mode 1)",
+        "avgBpm": "--",
+        "rt": "2.34 s",
+        "score": "5\/6",
+        "tremor": "--",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "05:56:47 PM",
+        "name": "GGE (Mode 3)",
+        "avgBpm": "76 BPM",
+        "rt": "1.34 s",
+        "score": "2\/6",
+        "tremor": "0.47 m\/s\u00b2",
+        "verdict": "FAILED"
+    },
+    {
+        "time": "05:50:53 PM",
+        "name": "QUIQUI (Mode 3)",
+        "avgBpm": "76 BPM",
+        "rt": "1.60 s",
+        "score": "5\/6",
+        "tremor": "0.33 m\/s\u00b2",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "05:43:38 PM",
+        "name": "Hari (Mode 1)",
+        "avgBpm": "--",
+        "rt": "0.96 s",
+        "score": "2\/6",
+        "tremor": "--",
+        "verdict": "FAILED"
+    },
+    {
+        "time": "05:29:35 PM",
+        "name": "ADITI (Mode 1)",
+        "avgBpm": "--",
+        "rt": "1.87 s",
+        "score": "6\/6",
+        "tremor": "--",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "05:28:50 PM",
+        "name": "ADITI (Mode 2)",
+        "avgBpm": "--",
+        "rt": "2.04 s",
+        "score": "5\/6",
+        "tremor": "--",
+        "verdict": "FAILED"
+    },
+    {
+        "time": "05:18:04 PM",
+        "name": "ADITI (Mode 2)",
+        "avgBpm": "75 BPM",
+        "rt": "2.47 s",
+        "score": "3\/6",
+        "tremor": "--",
+        "verdict": "FAILED"
+    },
+    {
+        "time": "03:10:23 PM",
+        "name": "GOBINDA (Mode 3)",
+        "avgBpm": "75 BPM",
+        "rt": "3.45 s",
+        "score": "5\/6",
+        "tremor": "0.39 m\/s\u00b2",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "02:46:34 PM",
+        "name": "MINI (Mode 3)",
+        "avgBpm": "75 BPM",
+        "rt": "1.66 s",
+        "score": "6\/6",
+        "tremor": "0.36 m\/s\u00b2",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "02:45:33 PM",
+        "name": "ADITI (Mode 3)",
+        "avgBpm": "75 BPM",
+        "rt": "2.20 s",
+        "score": "4\/6",
+        "tremor": "0.30 m\/s\u00b2",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "11:59:37 AM",
+        "name": "Qui (Mode 1)",
+        "avgBpm": "--",
+        "rt": "2.09 s",
+        "score": "4\/6",
+        "tremor": "--",
+        "verdict": "PASSED"
+    },
+    {
+        "time": "06:05:55 PM",
+        "name": "SR",
+        "avgBpm": "--",
+        "rt": "2.12 s",
+        "score": "5\/6",
+        "tremor": "--",
+        "verdict": "FAILED"
+    },
+    {
+        "time": "06:05:10 PM",
+        "name": "SR",
+        "avgBpm": "--",
+        "rt": "--",
+        "score": "1\/6",
+        "tremor": "--",
+        "verdict": "FAILED"
+    }
+]
